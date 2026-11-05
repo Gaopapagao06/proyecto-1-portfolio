@@ -1,18 +1,18 @@
 css
 
 /* =====================================
-   PORTFOLIO - Álvaro Gallo Sánchez
-   Diseño editorial contemporáneo
+   PORTFOLIO PERSONAL
+   ÁLVARO GALLO SÁNCHEZ
 ===================================== */
 
-/* 1. RESET */
+/* 1. RESET Y VARIABLES */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 2. VARIABLES */
 :root {
     --fondo: #eeeae1;
     --oscuro: #202b26;
@@ -23,7 +23,8 @@ css
     --fuente: Arial, sans-serif;
 }
 
-/* 3. ESTILOS GENERALES */
+/* 2. ESTILOS GENERALES */
+
 html {
     scroll-behavior: smooth;
 }
@@ -36,12 +37,21 @@ body {
 }
 
 section {
-    scroll-margin-top: 20px;
+    scroll-margin-top: 25px;
 }
 
-/* 4. CABECERA Y NAVEGACIÓN */
+.etiqueta {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: var(--terracota);
+    margin-bottom: 22px;
+}
+
+/* 3. CABECERA Y NAVEGACIÓN */
+
 header {
-    padding: 25px 8%;
+    padding: 25px 9%;
     background: var(--fondo);
     border-bottom: 1px solid #d5d0c5;
 }
@@ -54,10 +64,16 @@ nav {
     gap: 20px;
 }
 
-nav h2 {
+.logo {
     color: var(--oscuro);
-    font-size: 19px;
+    font-size: 23px;
+    font-weight: bold;
     letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--terracota);
 }
 
 nav ul {
@@ -73,81 +89,130 @@ nav a {
     transition: color 0.3s;
 }
 
-nav a:hover {
+nav ul a:hover {
     color: var(--terracota);
 }
 
-/* 5. PRESENTACIÓN PRINCIPAL */
-#inicio {
-    min-height: 570px;
+/* 4. PRESENTACIÓN PRINCIPAL */
+
+.hero {
+    min-height: 600px;
     padding: 110px 10%;
     background: var(--oscuro);
     color: var(--blanco);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     position: relative;
     overflow: hidden;
 }
 
-#inicio::after {
-    content: "SLS";
-    position: absolute;
-    right: 8%;
-    bottom: 35px;
-    font-size: 100px;
-    font-weight: bold;
-    color: rgba(255,255,255,0.05);
-}
-
-#inicio h1 {
+.hero h1 {
     max-width: 850px;
-    font-size: clamp(42px, 7vw, 75px);
-    line-height: 1.1;
+    font-size: clamp(42px, 7vw, 78px);
+    line-height: 1.12;
     letter-spacing: -3px;
     margin-bottom: 25px;
     color: var(--blanco);
 }
 
-#inicio h2 {
+.hero h1 span {
     color: #b8c8a9;
+}
+
+.hero h2 {
     font-size: 21px;
     font-weight: normal;
-    margin-bottom: 15px;
+    color: #d2d9cc;
+    margin-bottom: 18px;
 }
 
-#inicio p {
-    max-width: 530px;
+.hero .etiqueta {
+    color: #d3a18a;
+}
+
+.intro {
+    max-width: 570px;
     font-size: 17px;
     color: #d5d8d1;
+    margin-bottom: 35px;
 }
 
-/* 6. SOBRE MÍ */
-#sobre-mi {
-    padding: 100px 12%;
+.boton {
+    display: inline-block;
+    padding: 14px 25px;
+    background: var(--terracota);
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
 }
 
-#sobre-mi h2,
-#proyectos h2,
-#contacto h2 {
-    font-size: 42px;
+.boton:hover {
+    background: var(--verde);
+    transform: translateY(-3px);
+}
+
+.numero {
+    position: absolute;
+    right: 9%;
+    bottom: 35px;
+    color: #b8c8a9;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+/* 5. SOBRE MÍ */
+
+.about {
+    padding: 110px 12%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-titulo h2 {
     color: var(--oscuro);
-    margin-bottom: 25px;
-    letter-spacing: -1px;
+    font-size: 45px;
+    line-height: 1.2;
 }
 
-#sobre-mi p {
-    max-width: 750px;
-    font-size: 18px;
+.about-texto p {
+    margin-bottom: 20px;
+    font-size: 17px;
 }
 
-/* 7. PORTAFOLIO - CSS GRID */
-#proyectos {
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.habilidades span {
+    padding: 9px 17px;
+    background: var(--oscuro);
+    color: white;
+    font-size: 13px;
+    border-radius: 30px;
+}
+
+/* 6. PROYECTOS Y PORTAFOLIO */
+
+.projects {
     padding: 100px 10%;
     background: var(--blanco);
 }
 
-#proyectos > h2 {
+.projects h2 {
+    color: var(--oscuro);
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.projects-intro {
+    max-width: 600px;
     margin-bottom: 45px;
 }
 
@@ -157,36 +222,68 @@ nav a:hover {
     gap: 25px;
 }
 
-#proyectos article {
-    min-height: 175px;
-    padding: 30px;
+.project-card {
+    padding: 35px;
+    min-height: 245px;
     background: var(--fondo);
     border-bottom: 4px solid var(--verde);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#proyectos article:nth-child(even) {
+.project-card:nth-child(even) {
     border-bottom-color: var(--terracota);
 }
 
-#proyectos article:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
-#proyectos article h3 {
+.project-number {
+    display: block;
+    color: var(--terracota);
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
     color: var(--oscuro);
-    font-size: 23px;
+    font-size: 24px;
     margin-bottom: 12px;
 }
 
-/* 8. CONTACTO */
-#contacto {
-    padding: 100px 10%;
+.project-card p {
+    font-size: 15px;
+    margin-bottom: 20px;
 }
 
-#contacto > p {
-    margin-bottom: 30px;
+.project-tag {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--verde);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* 7. CONTACTO */
+
+.contact {
+    padding: 110px 10%;
+}
+
+.contact h2 {
+    max-width: 700px;
+    color: var(--oscuro);
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.contact > p:not(.etiqueta) {
+    max-width: 550px;
+    margin-bottom: 35px;
 }
 
 form {
@@ -231,7 +328,8 @@ button:hover {
     background: var(--verde);
 }
 
-/* 9. PIE DE PÁGINA */
+/* 8. PIE DE PÁGINA */
+
 footer {
     padding: 35px 10%;
     background: var(--oscuro);
@@ -241,9 +339,16 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+    font-size: 13px;
 }
 
-/* 10. TABLETS Y MÓVILES */
+footer a {
+    color: #b8c8a9;
+    text-decoration: none;
+}
+
+/* 9. RESPONSIVE - TABLETS */
+
 @media (max-width: 768px) {
 
     header {
@@ -260,27 +365,31 @@ footer {
         gap: 15px;
     }
 
-    #inicio {
-        min-height: 450px;
+    .hero {
+        min-height: 500px;
         padding: 75px 7%;
     }
 
-    #inicio h1 {
-        font-size: 43px;
+    .hero h1 {
+        font-size: 48px;
     }
 
-    #inicio::after {
-        font-size: 65px;
+    .about {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 75px 7%;
     }
 
-    #sobre-mi,
-    #proyectos,
-    #contacto {
-        padding: 65px 7%;
+    .projects {
+        padding: 75px 7%;
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact {
+        padding: 75px 7%;
     }
 
     footer {
@@ -289,16 +398,31 @@ footer {
     }
 }
 
+/* 10. RESPONSIVE - MÓVILES */
+
 @media (max-width: 480px) {
 
-    #inicio h1 {
-        font-size: 35px;
+    .hero h1 {
+        font-size: 38px;
         letter-spacing: -1px;
     }
 
-    #sobre-mi h2,
-    #proyectos h2,
-    #contacto h2 {
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .about-titulo h2,
+    .projects h2,
+    .contact h2 {
         font-size: 32px;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
+
+    nav ul {
+        gap: 12px;
+        font-size: 13px;
     }
 }
