@@ -1,23 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio personal de Sergio Llorente Santos">
-    <meta name="author" content="Álvaro Gallo Sánchez">
-    <meta name="keywords" content="portfolio, desarrollo web, HTML, CSS">
 
-    <title>Portfolio | Álvaro Gallo Sánchez</title>
+    <meta name="description" content="Portfolio personal de Álvaro Gallo Sánchez. Conoce mi historia, mis intereses y mis primeros pasos en desarrollo web.">
+    <meta name="author" content="Álvaro Gallo Sánchez">
+    <meta name="keywords" content="portfolio, Álvaro Gallo Sánchez, desarrollo web, HTML, CSS">
+
+    <title>Álvaro Gallo Sánchez | Portfolio personal</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+    <!-- CABECERA -->
     <header>
         <nav>
-            <h2>Álvaro Gallo Sánchez</h2>
+            <a href="#inicio" class="logo">ÁLVARO<span>.</span></a>
+
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -29,66 +32,179 @@
 
     <main>
 
-        <section id="inicio">
-            <h1>Hola, soy Álvaro Gallo Sánchez</h1>
-            <h2>Estudiante de desarrollo web</h2>
-            <p>Me apasiona la tecnología, la creatividad y aprender cosas nuevas.</p>
-        </section>
+        <!-- PRESENTACIÓN -->
+        <section id="inicio" class="hero">
 
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>
-                Soy Álvaro, estudiante de desarrollo web.
-                Estoy aprendiendo a crear páginas web con HTML y CSS
-                y quiero seguir desarrollando mis habilidades.
+            <p class="etiqueta">PORTFOLIO PERSONAL · 2026</p>
+
+            <h1>Hola, soy <span>Álvaro Gallo Sánchez.</span></h1>
+
+            <h2>Aprendiendo, creando y construyendo nuevas ideas.</h2>
+
+            <p class="intro">
+                Soy estudiante de desarrollo web y estoy comenzando
+                un camino en el que quiero combinar creatividad,
+                tecnología y aprendizaje constante.
             </p>
+
+            <a href="#proyectos" class="boton">Descubre mi mundo</a>
+
+            <p class="numero">01 — 04</p>
+
         </section>
 
-        <section id="proyectos">
-            <h2>Mis proyectos</h2>
+        <!-- SOBRE MÍ -->
+        <section id="sobre-mi" class="about">
 
-            <article>
-                <h3>Proyecto 1</h3>
-                <p>Mi primer portfolio personal.</p>
-            </article>
+            <div class="about-titulo">
+                <p class="etiqueta">UN POCO SOBRE MÍ</p>
+                <h2>Detrás de cada idea hay una persona.</h2>
+            </div>
 
-            <article>
-                <h3>Proyecto 2</h3>
-                <p>Diseño de una página web para una tienda.</p>
-            </article>
+            <div class="about-texto">
+                <p>
+                    Soy Álvaro Gallo Sánchez. Actualmente estoy
+                    formándome en desarrollo web y descubriendo
+                    todas las posibilidades que ofrece el mundo digital.
+                </p>
 
-            <article>
-                <h3>Proyecto 3</h3>
-                <p>Diseño de una web para un restaurante.</p>
-            </article>
+                <p>
+                    Me considero una persona con ganas de aprender,
+                    experimentar y mejorar. Me interesa especialmente
+                    el diseño de páginas web y la manera en la que
+                    la tecnología puede transformar una idea en algo real.
+                </p>
 
-            <article>
-                <h3>Proyecto 4</h3>
-                <p>Creación de una galería de fotografías.</p>
-            </article>
+                <div class="habilidades">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Creatividad</span>
+                    <span>Aprendizaje</span>
+                </div>
+            </div>
+
         </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="projects">
 
-            <form>
+            <p class="etiqueta">MI CAMINO CREATIVO</p>
+
+            <h2>Proyectos e ideas</h2>
+
+            <p class="projects-intro">
+                Cuatro espacios que representan mis intereses,
+                mis aprendizajes y las ideas que quiero desarrollar.
+            </p>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <span class="project-number">01</span>
+                    <h3>Mi primer portfolio</h3>
+                    <p>
+                        Mi primera página web personal, creada para
+                        presentarme y mostrar mis primeros pasos
+                        en desarrollo web.
+                    </p>
+                    <span class="project-tag">HTML + CSS</span>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">02</span>
+                    <h3>Diseño digital</h3>
+                    <p>
+                        Una propuesta creativa para explorar nuevas
+                        formas de combinar estética, diseño
+                        y tecnología.
+                    </p>
+                    <span class="project-tag">Creatividad</span>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">03</span>
+                    <h3>Mis intereses</h3>
+                    <p>
+                        Un espacio digital donde compartir mis
+                        aficiones, inspiraciones y temas que
+                        despiertan mi curiosidad.
+                    </p>
+                    <span class="project-tag">Inspiración</span>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">04</span>
+                    <h3>Ideas de futuro</h3>
+                    <p>
+                        Una selección de ideas y proyectos que
+                        me gustaría convertir en realidad mientras
+                        sigo aprendiendo.
+                    </p>
+                    <span class="project-tag">Nuevos retos</span>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contact">
+
+            <p class="etiqueta">¿HABLAMOS?</p>
+
+            <h2>Las buenas ideas empiezan con una conversación.</h2>
+
+            <p>
+                Si quieres contactar conmigo, puedes dejarme
+                un mensaje a través del siguiente formulario.
+            </p>
+
+            <form action="#" method="post">
+
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    required
+                >
 
                 <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    required
+                >
 
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Escribe tu mensaje..."
+                    required
+                ></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit">Enviar mensaje ↗</button>
+
             </form>
+
         </section>
 
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer>
-        <p>© 2026 Álvaro Gallo Sánchez. Todos los derechos reservados.</p>
+
+        <p>ÁLVARO GALLO SÁNCHEZ</p>
+
+        <p>© 2026 · Portfolio personal</p>
+
+        <a href="#inicio">Volver arriba ↑</a>
+
     </footer>
 
 </body>
