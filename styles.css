@@ -1,0 +1,304 @@
+css
+
+/* =====================================
+   PORTFOLIO - Álvaro Gallo Sánchez
+   Diseño editorial contemporáneo
+===================================== */
+
+/* 1. RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. VARIABLES */
+:root {
+    --fondo: #eeeae1;
+    --oscuro: #202b26;
+    --verde: #647c65;
+    --terracota: #bd7459;
+    --blanco: #faf9f5;
+    --texto: #444941;
+    --fuente: Arial, sans-serif;
+}
+
+/* 3. ESTILOS GENERALES */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fuente);
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+/* 4. CABECERA Y NAVEGACIÓN */
+header {
+    padding: 25px 8%;
+    background: var(--fondo);
+    border-bottom: 1px solid #d5d0c5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav h2 {
+    color: var(--oscuro);
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: var(--oscuro);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--terracota);
+}
+
+/* 5. PRESENTACIÓN PRINCIPAL */
+#inicio {
+    min-height: 570px;
+    padding: 110px 10%;
+    background: var(--oscuro);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#inicio::after {
+    content: "SLS";
+    position: absolute;
+    right: 8%;
+    bottom: 35px;
+    font-size: 100px;
+    font-weight: bold;
+    color: rgba(255,255,255,0.05);
+}
+
+#inicio h1 {
+    max-width: 850px;
+    font-size: clamp(42px, 7vw, 75px);
+    line-height: 1.1;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+    color: var(--blanco);
+}
+
+#inicio h2 {
+    color: #b8c8a9;
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    max-width: 530px;
+    font-size: 17px;
+    color: #d5d8d1;
+}
+
+/* 6. SOBRE MÍ */
+#sobre-mi {
+    padding: 100px 12%;
+}
+
+#sobre-mi h2,
+#proyectos h2,
+#contacto h2 {
+    font-size: 42px;
+    color: var(--oscuro);
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+}
+
+#sobre-mi p {
+    max-width: 750px;
+    font-size: 18px;
+}
+
+/* 7. PORTAFOLIO - CSS GRID */
+#proyectos {
+    padding: 100px 10%;
+    background: var(--blanco);
+}
+
+#proyectos > h2 {
+    margin-bottom: 45px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+#proyectos article {
+    min-height: 175px;
+    padding: 30px;
+    background: var(--fondo);
+    border-bottom: 4px solid var(--verde);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#proyectos article:nth-child(even) {
+    border-bottom-color: var(--terracota);
+}
+
+#proyectos article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+#proyectos article h3 {
+    color: var(--oscuro);
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+/* 8. CONTACTO */
+#contacto {
+    padding: 100px 10%;
+}
+
+#contacto > p {
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form label {
+    color: var(--oscuro);
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    background: var(--blanco);
+    border: 1px solid #d2cec3;
+    font-family: inherit;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--verde);
+}
+
+button {
+    padding: 16px;
+    background: var(--oscuro);
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: var(--verde);
+}
+
+/* 9. PIE DE PÁGINA */
+footer {
+    padding: 35px 10%;
+    background: var(--oscuro);
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* 10. TABLETS Y MÓVILES */
+@media (max-width: 768px) {
+
+    header {
+        padding: 22px 6%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #inicio {
+        min-height: 450px;
+        padding: 75px 7%;
+    }
+
+    #inicio h1 {
+        font-size: 43px;
+    }
+
+    #inicio::after {
+        font-size: 65px;
+    }
+
+    #sobre-mi,
+    #proyectos,
+    #contacto {
+        padding: 65px 7%;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #inicio h1 {
+        font-size: 35px;
+        letter-spacing: -1px;
+    }
+
+    #sobre-mi h2,
+    #proyectos h2,
+    #contacto h2 {
+        font-size: 32px;
+    }
+}
