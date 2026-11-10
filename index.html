@@ -1,211 +1,358 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Portfolio personal de Álvaro Gallo Sánchez. Conoce mi historia, mis intereses y mis primeros pasos en desarrollo web.">
-    <meta name="author" content="Álvaro Gallo Sánchez">
-    <meta name="keywords" content="portfolio, Álvaro Gallo Sánchez, desarrollo web, HTML, CSS">
-
-    <title>Álvaro Gallo Sánchez | Portfolio personal</title>
-
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio personal de Álvaro Gallo Sánchez. Ideas, estrategia, creatividad y mentalidad emprendedora.">
+  <meta name="author" content="Álvaro Gallo Sánchez">
+  <meta name="theme-color" content="#f2eee6">
+  <title>Álvaro Gallo — Think. Build. Move.</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <!-- CABECERA -->
-    <header>
-        <nav>
-            <a href="#inicio" class="logo">ÁLVARO<span>.</span></a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Álvaro Gallo, inicio">
+      <span class="brand-mark">AG<span>.</span></span>
+      <span class="brand-caption">Independent mind<br>Future in progress</span>
+    </a>
 
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#about">Sobre mí</a>
+      <a href="#work">Proyectos</a>
+      <a href="#vision">Visión</a>
+      <a class="nav-contact" href="#contact">Hablemos <span>↗</span></a>
+    </nav>
+  </header>
 
-    <main>
+  <main id="contenido">
+    <!-- HERO -->
+    <section class="hero section-shell" id="inicio">
+      <div class="hero-topline">
+        <span>Portfolio personal / 2026</span>
+        <span class="availability"><i></i> En constante evolución</span>
+      </div>
 
-        <!-- PRESENTACIÓN -->
-        <section id="inicio" class="hero">
-
-            <p class="etiqueta">PORTFOLIO PERSONAL · 2026</p>
-
-            <h1>Hola, soy <span>Álvaro Gallo Sánchez.</span></h1>
-
-            <h2>Aprendiendo, creando y construyendo nuevas ideas.</h2>
-
-            <p class="intro">
-                Soy estudiante de desarrollo web y estoy comenzando
-                un camino en el que quiero combinar creatividad,
-                tecnología y aprendizaje constante.
+      <div class="hero-main">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Hola, soy Álvaro Gallo</p>
+          <h1>IDEAS<br>INTO <span class="outline-word">ACTION</span><span class="asterisk">*</span></h1>
+          <div class="hero-bottom">
+            <p class="hero-description">
+              Me interesa lo que ocurre cuando la curiosidad se encuentra con la iniciativa.
+              Exploro ideas, negocio y creatividad para convertir posibilidades en proyectos.
             </p>
+            <a class="round-link" href="#about" aria-label="Descubrir más sobre mí">↓</a>
+          </div>
+        </div>
 
-            <a href="#proyectos" class="boton">Descubre mi mundo</a>
+        <div class="hero-art" aria-label="Composición gráfica abstracta">
+          <div class="art-sticker sticker-one">CURIOSITY<br>FIRST</div>
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-core">AG<span>®</span></div>
+          <div class="art-cross cross-one">+</div>
+          <div class="art-cross cross-two">+</div>
+          <div class="art-coordinate">40°25' N<br>03°42' W</div>
+          <div class="art-caption">A MIND<br>IN MOTION</div>
+          <div class="art-number">01—04</div>
+        </div>
+      </div>
 
-            <p class="numero">01 — 04</p>
+      <div class="hero-marquee" aria-label="Pensar, crear, explorar y avanzar">
+        <div class="marquee-track">
+          <span>THINK BIG</span><b>✳</b><span>MAKE IT HAPPEN</span><b>✳</b>
+          <span>STAY CURIOUS</span><b>✳</b><span>THINK BIG</span><b>✳</b>
+          <span>MAKE IT HAPPEN</span><b>✳</b><span>STAY CURIOUS</span><b>✳</b>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <!-- ABOUT -->
+    <section class="about section-shell section-pad" id="about">
+      <div class="section-heading">
+        <span class="section-index">01 / ABOUT</span>
+        <span class="section-note">Una mente inquieta, muchas preguntas.</span>
+      </div>
 
-        <!-- SOBRE MÍ -->
-        <section id="sobre-mi" class="about">
+      <div class="about-grid">
+        <div class="about-title">
+          <p class="eyebrow">Un poco sobre mí</p>
+          <h2>No vine a<br>quedarme<br><em>quieto.</em></h2>
+          <div class="scribble" aria-hidden="true">↘</div>
+        </div>
 
-            <div class="about-titulo">
-                <p class="etiqueta">UN POCO SOBRE MÍ</p>
-                <h2>Detrás de cada idea hay una persona.</h2>
+        <div class="about-content">
+          <p class="about-lead">
+            Soy Álvaro Gallo Sánchez. Me mueve la curiosidad por entender cómo nacen
+            las ideas, cómo funcionan los negocios y qué hace que una oportunidad
+            se convierta en algo real.
+          </p>
+          <p>
+            Me considero una persona con iniciativa, inquieta y con mentalidad
+            emprendedora. Me gusta observar, hacer preguntas, conectar conceptos
+            y explorar caminos que todavía no están definidos.
+          </p>
+          <p>
+            No tengo todas las respuestas sobre mi futuro profesional. Y precisamente
+            ahí encuentro una motivación: aprender, probar, equivocarme y descubrir
+            dónde puedo aportar más valor.
+          </p>
+
+          <div class="about-signature">
+            <span class="signature-mark">AG.</span>
+            <span>Curioso por naturaleza.<br>Emprendedor por actitud.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="principles">
+        <article class="principle">
+          <span class="principle-number">01</span>
+          <h3>Curiosidad</h3>
+          <p>Mirar más allá de lo evidente y no dejar de hacer preguntas.</p>
+        </article>
+        <article class="principle">
+          <span class="principle-number">02</span>
+          <h3>Iniciativa</h3>
+          <p>Pasar de pensar que algo sería interesante a intentar hacerlo realidad.</p>
+        </article>
+        <article class="principle">
+          <span class="principle-number">03</span>
+          <h3>Aprendizaje</h3>
+          <p>Entender cada reto como una oportunidad para mejorar y evolucionar.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto">
+      <div class="manifesto-inner">
+        <span class="manifesto-label">A PERSONAL MANIFESTO / 001</span>
+        <p>
+          Las buenas ideas no sirven de mucho
+          <span>si nunca salen de la cabeza.</span>
+        </p>
+        <div class="manifesto-footer">
+          <span>MENOS EXCUSAS. MÁS EXPERIMENTOS.</span>
+          <span>— ÁLVARO GALLO</span>
+        </div>
+        <span class="manifesto-symbol" aria-hidden="true">✳</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="work section-shell section-pad" id="work">
+      <div class="section-heading">
+        <span class="section-index">02 / SELECTED IDEAS</span>
+        <span class="section-note">Exploraciones, conceptos y posibilidades.</span>
+      </div>
+
+      <div class="work-intro">
+        <h2>Ideas en<br><em>movimiento.</em></h2>
+        <p>
+          No todas las ideas empiezan con un plan perfecto.
+          Algunas empiezan con una pregunta. Estas son cuatro
+          exploraciones conceptuales que representan mi forma de pensar.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-orange">
+          <div class="project-visual visual-brand">
+            <span class="visual-tag">BRAND / 001</span>
+            <div class="brand-composition">
+              <span class="brand-small">THE NEW</span>
+              <span class="brand-big">GOOD<br>FORM<span>.</span></span>
+              <span class="brand-bottom">A DIFFERENT KIND OF EVERYDAY</span>
             </div>
-
-            <div class="about-texto">
-                <p>
-                    Soy Álvaro Gallo Sánchez. Actualmente estoy
-                    formándome en desarrollo web y descubriendo
-                    todas las posibilidades que ofrece el mundo digital.
-                </p>
-
-                <p>
-                    Me considero una persona con ganas de aprender,
-                    experimentar y mejorar. Me interesa especialmente
-                    el diseño de páginas web y la manera en la que
-                    la tecnología puede transformar una idea en algo real.
-                </p>
-
-                <div class="habilidades">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>Creatividad</span>
-                    <span>Aprendizaje</span>
-                </div>
+            <span class="visual-index">01</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span class="project-type">IDENTIDAD · CONCEPTO DE MARCA</span>
+              <h3>Una marca desde cero</h3>
             </div>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p class="project-description">
+            Explorar cómo una idea puede transformarse en una marca con personalidad,
+            posicionamiento y una propuesta de valor reconocible.
+          </p>
+          <div class="project-tags"><span>Branding</span><span>Posicionamiento</span><span>Creatividad</span></div>
+        </article>
 
-        </section>
-
-        <!-- PROYECTOS -->
-        <section id="proyectos" class="projects">
-
-            <p class="etiqueta">MI CAMINO CREATIVO</p>
-
-            <h2>Proyectos e ideas</h2>
-
-            <p class="projects-intro">
-                Cuatro espacios que representan mis intereses,
-                mis aprendizajes y las ideas que quiero desarrollar.
-            </p>
-
-            <div class="projects-grid">
-
-                <article class="project-card">
-                    <span class="project-number">01</span>
-                    <h3>Mi primer portfolio</h3>
-                    <p>
-                        Mi primera página web personal, creada para
-                        presentarme y mostrar mis primeros pasos
-                        en desarrollo web.
-                    </p>
-                    <span class="project-tag">HTML + CSS</span>
-                </article>
-
-                <article class="project-card">
-                    <span class="project-number">02</span>
-                    <h3>Diseño digital</h3>
-                    <p>
-                        Una propuesta creativa para explorar nuevas
-                        formas de combinar estética, diseño
-                        y tecnología.
-                    </p>
-                    <span class="project-tag">Creatividad</span>
-                </article>
-
-                <article class="project-card">
-                    <span class="project-number">03</span>
-                    <h3>Mis intereses</h3>
-                    <p>
-                        Un espacio digital donde compartir mis
-                        aficiones, inspiraciones y temas que
-                        despiertan mi curiosidad.
-                    </p>
-                    <span class="project-tag">Inspiración</span>
-                </article>
-
-                <article class="project-card">
-                    <span class="project-number">04</span>
-                    <h3>Ideas de futuro</h3>
-                    <p>
-                        Una selección de ideas y proyectos que
-                        me gustaría convertir en realidad mientras
-                        sigo aprendiendo.
-                    </p>
-                    <span class="project-tag">Nuevos retos</span>
-                </article>
-
+        <article class="project-card project-lilac">
+          <div class="project-visual visual-business">
+            <span class="visual-tag">BUSINESS / 002</span>
+            <div class="business-shape">
+              <div class="shape-circle"></div>
+              <div class="shape-square"></div>
+              <span>WHAT<br>IF?</span>
             </div>
+            <span class="visual-side-note">FIND THE OPPORTUNITY</span>
+            <span class="visual-index">02</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span class="project-type">ESTRATEGIA · MODELO DE NEGOCIO</span>
+              <h3>Una oportunidad de negocio</h3>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p class="project-description">
+            Partir de una necesidad cotidiana, detectar una oportunidad y plantear
+            una posible solución con sentido para las personas y el mercado.
+          </p>
+          <div class="project-tags"><span>Emprendimiento</span><span>Estrategia</span><span>Ideas</span></div>
+        </article>
 
-        </section>
+        <article class="project-card project-green">
+          <div class="project-visual visual-digital">
+            <span class="visual-tag">DIGITAL / 003</span>
+            <div class="digital-window">
+              <div class="window-bar"><i></i><i></i><i></i><span>YOUR NEXT MOVE</span></div>
+              <div class="window-content">
+                <span>MAKE<br>IT <b>MATTER.</b></span>
+                <div class="window-circle">↗</div>
+              </div>
+            </div>
+            <span class="visual-index">03</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span class="project-type">EXPERIENCIA · PRESENCIA DIGITAL</span>
+              <h3>Mi primer espacio digital</h3>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p class="project-description">
+            Diseñar una experiencia digital sencilla, coherente y centrada en comunicar
+            una idea con claridad y personalidad.
+          </p>
+          <div class="project-tags"><span>Diseño web</span><span>Experiencia</span><span>Comunicación</span></div>
+        </article>
 
-        <!-- CONTACTO -->
-        <section id="contacto" class="contact">
+        <article class="project-card project-blue">
+          <div class="project-visual visual-future">
+            <span class="visual-tag">NEXT / 004</span>
+            <div class="future-type">NOT<br>YET<span>→</span></div>
+            <div class="future-orbit"></div>
+            <span class="future-caption">THE BEST IS<br>UNDER CONSTRUCTION</span>
+            <span class="visual-index">04</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <span class="project-type">EXPLORACIÓN · FUTURO</span>
+              <h3>Lo que está por venir</h3>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p class="project-description">
+            Un espacio abierto a nuevas ideas, aprendizajes y proyectos que todavía
+            no tienen forma, pero sí un punto de partida.
+          </p>
+          <div class="project-tags"><span>Visión</span><span>Aprendizaje</span><span>Experimentación</span></div>
+        </article>
+      </div>
 
-            <p class="etiqueta">¿HABLAMOS?</p>
+      <p class="project-disclaimer">
+        Nota: los proyectos mostrados son ejercicios conceptuales y líneas de exploración
+        personal. No representan encargos comerciales ni resultados de clientes reales.
+      </p>
+    </section>
 
-            <h2>Las buenas ideas empiezan con una conversación.</h2>
+    <!-- VISION -->
+    <section class="vision section-shell section-pad" id="vision">
+      <div class="section-heading">
+        <span class="section-index">03 / WHAT'S NEXT</span>
+        <span class="section-note">El camino también forma parte del destino.</span>
+      </div>
 
+      <div class="vision-grid">
+        <div class="vision-heading">
+          <p class="eyebrow">Mirando hacia delante</p>
+          <h2>Still<br><em>becoming.</em></h2>
+        </div>
+        <div class="vision-content">
+          <p class="vision-lead">
+            Todavía estoy descubriendo qué quiero construir. Pero tengo claro
+            cómo quiero hacerlo: con ambición, criterio, curiosidad y ganas de aprender.
+          </p>
+          <p>
+            Me atrae el universo de los negocios, el emprendimiento y la creación
+            de proyectos. Quiero seguir desarrollando habilidades, conocer nuevas
+            perspectivas y encontrar problemas que merezca la pena resolver.
+          </p>
+          <div class="vision-statement">
+            <span>THE DIRECTION</span>
+            <strong>No dejar de explorar.<br>No dejar de construir.</strong>
+            <span class="vision-arrow">↗</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="vision-bottom">
+        <span>OPEN MIND</span><span>+ INITIATIVE</span><span>+ ACTION</span><span>= NEXT CHAPTER</span>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-inner section-shell">
+        <div class="section-heading">
+          <span class="section-index">04 / GET IN TOUCH</span>
+          <span class="section-note">Toda buena conversación empieza con un hola.</span>
+        </div>
+
+        <div class="contact-main">
+          <div class="contact-copy">
+            <p class="eyebrow">¿Tienes una idea?</p>
+            <h2>LET'S<br><em>TALK.</em></h2>
             <p>
-                Si quieres contactar conmigo, puedes dejarme
-                un mensaje a través del siguiente formulario.
+              Estoy abierto a conocer personas, intercambiar ideas y descubrir
+              nuevas oportunidades. Si tienes algo interesante en mente, hablemos.
             </p>
+            <a class="email-link" href="mailto:agallosanchez06@gmail.com">
+             agallosanchez06@gmail.com <span>↗</span>
+            </a>
+           
+          </div>
 
-            <form action="#" method="post">
+          <form class="contact-form" action="#" method="post">
+            <div class="form-heading">
+              <span>01 — 03</span>
+              <span>DROP A MESSAGE</span>
+            </div>
 
-                <label for="nombre">Nombre</label>
-                <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    placeholder="Tu nombre"
-                    required
-                >
+            <label for="name">Tu nombre</label>
+            <input type="text" id="name" name="name" placeholder="¿Cómo te llamas?" required>
 
-                <label for="email">Correo electrónico</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="tu@email.com"
-                    required
-                >
+            <label for="email">Tu email</label>
+            <input type="email" id="email" name="email" placeholder="agallosanchez06@gmail.com" required>
 
-                <label for="mensaje">Mensaje</label>
-                <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    rows="5"
-                    placeholder="Escribe tu mensaje..."
-                    required
-                ></textarea>
+            <label for="message">Tu mensaje</label>
+            <textarea id="message" name="message" rows="4" placeholder="Cuéntame qué tienes en mente..." required></textarea>
 
-                <button type="submit">Enviar mensaje ↗</button>
+            <button class="submit-button" type="submit">
+              Enviar mensaje <span>↗</span>
+            </button>
+            <p class="form-note">
+              Formulario demostrativo: necesita un servicio de envío para recibir mensajes.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            </form>
-
-        </section>
-
-    </main>
-
-    <!-- PIE DE PÁGINA -->
-    <footer>
-
-        <p>ÁLVARO GALLO SÁNCHEZ</p>
-
-        <p>© 2026 · Portfolio personal</p>
-
-        <a href="#inicio">Volver arriba ↑</a>
-
-    </footer>
-
+  <footer class="site-footer">
+    <a class="footer-brand" href="#inicio">AG<span>.</span></a>
+    <p>Hecho con curiosidad y mucho café.</p>
+    <a href="#inicio" class="back-top">VOLVER ARRIBA ↑</a>
+    <span class="footer-year">© 2026 ÁLVARO GALLO</span>
+  </footer>
 </body>
 </html>
